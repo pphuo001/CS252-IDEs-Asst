@@ -46,7 +46,7 @@ testlist: testlist.o namelist.o
 # whenever we have made a change to either testlist.cpp or namelist.h
 #
 testlist.o: testlist.cpp namelist.h
-
+	g++ $(CPPFLAGS) -c testlist.cpp namelist.h
 #
 # Build namelist.o from namelist.cpp 
 # Again, we use the default rule for producing .o files from .cpp files.
@@ -55,7 +55,7 @@ testlist.o: testlist.cpp namelist.h
 # whenever we have made a change to either namelist.cpp or namelist.h
 #
 namelist.o: namelist.cpp namelist.h
-
+	g++ $(CPPFLAGS) -c namelist.cpp namelist.h
 
 
 #

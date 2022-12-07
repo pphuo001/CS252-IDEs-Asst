@@ -21,7 +21,7 @@ void NameList::addToEnd (std::string name)
 {
   NameListNode* newNode = new NameListNode(name);
   NameListNode* lastNode = firstNode;
-  while (lastNode->next != NULL)
+  while (lastNode->next != NULL) 
     lastNode = lastNode->next;
   lastNode->next = newNode;
 }
@@ -45,7 +45,7 @@ void NameList::print (std::ostream& out) const
       if (current->next != NULL)
 	{
 	  out << ", ";
-	  columns += 2;
+	  columns += 2; //change to 1 from 2
 	  if (columns > 64)
 	    {
 	      out << "\n";

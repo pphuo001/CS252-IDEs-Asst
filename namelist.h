@@ -4,9 +4,6 @@
 #include <iostream>
 #include <string>
 
-
-
-
 struct NameListNode {
   std::string name;
   NameListNode* next;
@@ -20,7 +17,6 @@ struct NameListNode {
   ~NameListNode() {delete next; next = 0;}
   void print (std::ostream& out) const;
 };
-
 
 class NameList {
 private:
